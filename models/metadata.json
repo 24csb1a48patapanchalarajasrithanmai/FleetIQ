@@ -1,0 +1,328 @@
+{
+  "best_model": "lightgbm",
+  "metrics": {
+    "xgboost": {
+      "mae": 1.4688286781311035,
+      "rmse": 2.106148859419934,
+      "r2": 0.7989156246185303
+    },
+    "lightgbm": {
+      "mae": 1.4227665515579786,
+      "rmse": 2.0815866849518665,
+      "r2": 0.803578400286688
+    }
+  },
+  "feature_columns": [
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_rainy",
+    "lag_1h",
+    "lag_24h",
+    "lag_168h",
+    "roll_mean_3h",
+    "roll_mean_24h",
+    "roll_mean_168h",
+    "roll_std_24h",
+    "zone_avg_demand",
+    "borough_code",
+    "PopularityIndex",
+    "avg_fare",
+    "avg_distance",
+    "avg_passengers",
+    "zone_id"
+  ],
+  "target_column": "demand",
+  "train_rows": 96000,
+  "test_rows": 20160,
+  "trained_through": "2024-04-30 23:00:00",
+  "zones": [
+    {
+      "zone_id": 4,
+      "Zone": "Alphabet City",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.0,
+      "avg_demand": 6.2513774104683195
+    },
+    {
+      "zone_id": 7,
+      "Zone": "Astoria",
+      "Borough": "Queens",
+      "PopularityIndex": 0.55,
+      "avg_demand": 3.4741735537190084
+    },
+    {
+      "zone_id": 13,
+      "Zone": "Battery Park City",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.85,
+      "avg_demand": 5.357093663911845
+    },
+    {
+      "zone_id": 24,
+      "Zone": "Bloomingdale",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.75,
+      "avg_demand": 4.757231404958677
+    },
+    {
+      "zone_id": 33,
+      "Zone": "Brooklyn Heights",
+      "Borough": "Brooklyn",
+      "PopularityIndex": 0.6,
+      "avg_demand": 3.8050964187327825
+    },
+    {
+      "zone_id": 42,
+      "Zone": "Central Harlem",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.65,
+      "avg_demand": 4.071280991735537
+    },
+    {
+      "zone_id": 48,
+      "Zone": "Clinton East",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.15,
+      "avg_demand": 7.148415977961433
+    },
+    {
+      "zone_id": 50,
+      "Zone": "Clinton West",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.05,
+      "avg_demand": 6.56232782369146
+    },
+    {
+      "zone_id": 68,
+      "Zone": "East Chelsea",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.1,
+      "avg_demand": 6.9059917355371905
+    },
+    {
+      "zone_id": 79,
+      "Zone": "East Village",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.2,
+      "avg_demand": 7.46969696969697
+    },
+    {
+      "zone_id": 87,
+      "Zone": "Financial District North",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.3,
+      "avg_demand": 8.205578512396695
+    },
+    {
+      "zone_id": 90,
+      "Zone": "Flatiron",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.25,
+      "avg_demand": 7.835055096418733
+    },
+    {
+      "zone_id": 100,
+      "Zone": "Garment District",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.1,
+      "avg_demand": 6.771005509641873
+    },
+    {
+      "zone_id": 107,
+      "Zone": "Gramercy",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.0,
+      "avg_demand": 6.334366391184573
+    },
+    {
+      "zone_id": 113,
+      "Zone": "Greenwich Village North",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.05,
+      "avg_demand": 6.611225895316805
+    },
+    {
+      "zone_id": 114,
+      "Zone": "Greenwich Village South",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.0,
+      "avg_demand": 6.255853994490358
+    },
+    {
+      "zone_id": 125,
+      "Zone": "Hudson Sq",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.95,
+      "avg_demand": 5.9679752066115705
+    },
+    {
+      "zone_id": 132,
+      "Zone": "JFK Airport",
+      "Borough": "Queens",
+      "PopularityIndex": 1.4,
+      "avg_demand": 8.664256198347108
+    },
+    {
+      "zone_id": 138,
+      "Zone": "LaGuardia Airport",
+      "Borough": "Queens",
+      "PopularityIndex": 1.2,
+      "avg_demand": 7.533057851239669
+    },
+    {
+      "zone_id": 140,
+      "Zone": "Lenox Hill East",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.9,
+      "avg_demand": 5.652548209366391
+    },
+    {
+      "zone_id": 141,
+      "Zone": "Lenox Hill West",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.9,
+      "avg_demand": 5.589187327823692
+    },
+    {
+      "zone_id": 142,
+      "Zone": "Lincoln Square East",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.0,
+      "avg_demand": 6.195936639118457
+    },
+    {
+      "zone_id": 148,
+      "Zone": "Lower East Side",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.95,
+      "avg_demand": 5.934917355371901
+    },
+    {
+      "zone_id": 161,
+      "Zone": "Midtown Center",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.45,
+      "avg_demand": 9.057506887052341
+    },
+    {
+      "zone_id": 162,
+      "Zone": "Midtown East",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.4,
+      "avg_demand": 8.852272727272727
+    },
+    {
+      "zone_id": 163,
+      "Zone": "Midtown North Center",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.35,
+      "avg_demand": 8.390151515151516
+    },
+    {
+      "zone_id": 164,
+      "Zone": "Midtown South",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.3,
+      "avg_demand": 8.080578512396695
+    },
+    {
+      "zone_id": 170,
+      "Zone": "Murray Hill",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.05,
+      "avg_demand": 6.443870523415978
+    },
+    {
+      "zone_id": 186,
+      "Zone": "Penn Station/Madison Sq West",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.35,
+      "avg_demand": 8.422520661157025
+    },
+    {
+      "zone_id": 211,
+      "Zone": "SoHo",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.15,
+      "avg_demand": 7.259297520661157
+    },
+    {
+      "zone_id": 224,
+      "Zone": "Stuy Town/Peter Cooper Village",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.7,
+      "avg_demand": 4.398071625344353
+    },
+    {
+      "zone_id": 229,
+      "Zone": "Sutton Place/Turtle Bay North",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.9,
+      "avg_demand": 5.649104683195592
+    },
+    {
+      "zone_id": 230,
+      "Zone": "Times Sq/Theatre District",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.5,
+      "avg_demand": 9.244834710743802
+    },
+    {
+      "zone_id": 231,
+      "Zone": "TriBeCa/Civic Center",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.0,
+      "avg_demand": 6.225206611570248
+    },
+    {
+      "zone_id": 234,
+      "Zone": "Union Sq",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.2,
+      "avg_demand": 7.503099173553719
+    },
+    {
+      "zone_id": 236,
+      "Zone": "Upper East Side North",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.1,
+      "avg_demand": 6.901170798898072
+    },
+    {
+      "zone_id": 237,
+      "Zone": "Upper East Side South",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.15,
+      "avg_demand": 7.2134986225895315
+    },
+    {
+      "zone_id": 238,
+      "Zone": "Upper West Side North",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.95,
+      "avg_demand": 5.995179063360881
+    },
+    {
+      "zone_id": 239,
+      "Zone": "Upper West Side South",
+      "Borough": "Manhattan",
+      "PopularityIndex": 0.95,
+      "avg_demand": 5.879820936639119
+    },
+    {
+      "zone_id": 249,
+      "Zone": "West Village",
+      "Borough": "Manhattan",
+      "PopularityIndex": 1.05,
+      "avg_demand": 6.587465564738292
+    }
+  ]
+}
